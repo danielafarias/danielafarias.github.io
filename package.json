@@ -1,0 +1,26 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielafarias/danielafarias.github.io.git"
+  },
+  "author": "danielafarias",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danielafarias/danielafarias.github.io/issues"
+  },
+  "homepage": "https://github.com/danielafarias/danielafarias.github.io#readme",
+  "dependencies": {
+    "nes.css": "^2.3.0",
+    "webpack": "^5.64.4"
+  },
+  "devDependencies": {
+    "css-loader": "^6.5.1"
+  }
+}
