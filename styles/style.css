@@ -18,73 +18,17 @@ body {
   background-size: cover;
 }
 
-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+main {
   padding: 4rem 6rem;
 }
 
-header img {
-  border-radius: 100%;
-  width: 15%;
-}
-
-header .sections {
+main #about {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
-header .infos {
-  margin-left: 1.5rem;
-}
-
-header .infos h1 {
-  font-size: 3rem;
-  color: #ff897d;
-}
-
-header .infos .social-icons {
-  margin-top: 1rem;
-}
-
-header .infos .social-icons svg {
-  margin-right: 0.5rem;
-}
-
-header .infos .social-icons svg:hover {
-  color: #ff897d;
-}
-
-header .decoration-phrase {
-  margin-left: 4rem;
-}
-
-header .decoration-phrase h4 {
-  color: #c4c4c4;
-  font-weight: 300;
-  font-style: italic;
-  font-size: 2rem;
-}
-
-menu {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #ff897d;
-  padding: 1rem;
-}
-
-menu h3 {
-  word-spacing: 2rem;
-}
-
-menu h3 a:hover {
-  color: #424242;
-}
-
-main #about {
+main #about .about-text {
   background: rgba(255, 255, 255, 0.185);
   backdrop-filter: blur(5px);
   margin: 2rem 6rem;
@@ -96,7 +40,46 @@ main #about {
   align-items: flex-start;
 }
 
-main #about img {
+main #about .about-text img {
   width: 15%;
   margin: 1rem;
+}
+
+main #about aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+main #about aside h1 {
+  font-size: 1.5rem;
+  color: #91162a;
+  text-shadow: 2px 2px 1px #e0e0e0;
+}
+
+main #about aside h2 {
+  font-size: 1rem;
+}
+
+main #about aside #avatar {
+  border-radius: 100%;
+  width: 100%;
+}
+
+main #about aside .links {
+  white-space: nowrap;
+  margin: 30px;
+}
+
+main #about aside p {
+  color: #424242;
+}
+
+main #about aside .container {
+  padding: 2rem;
+}
+
+main #about article h3 {
+  color: #91162a;
 }
