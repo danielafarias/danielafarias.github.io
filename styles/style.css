@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: 'Press Start 2P', cursive;
+  font-family: "Press Start 2P", cursive;
   /* font-family: "Ubuntu", sans-serif; */
   color: #e0e0e0;
 }
@@ -16,6 +16,43 @@ body {
   background-image: url(/img/background.svg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+header {
+  padding: 2rem 6rem;
+  background-color: #95022b;
+  border-bottom: 3px solid #e0e0e0;
+}
+
+header .flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .flex .icon {
+  background-color: #e0e0e0;
+  padding: 1.5rem 1rem;
+  border-radius: 100%;
+}
+
+header menu {
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+header menu #menu-links {
+  text-decoration: none;
+  color: #e0e0e0
+}
+
+header menu #menu-links:hover {
+  text-decoration: none;
+  color: #212529;
+}
+
+header .nes-select.is-dark {
+  width: 20%;
 }
 
 main {
@@ -48,13 +85,13 @@ main #about .about-text img {
 main #about aside {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   text-align: center;
 }
 
 main #about aside h1 {
   font-size: 1.5rem;
-  color: #91162a;
+  color: #ef233c;
   text-shadow: 2px 2px 1px #e0e0e0;
 }
 
@@ -64,12 +101,14 @@ main #about aside h2 {
 
 main #about aside #avatar {
   border-radius: 100%;
-  width: 100%;
+  width: 70%;
+  margin: 30px;
 }
 
 main #about aside .links {
   white-space: nowrap;
   margin: 30px;
+  padding-bottom: 20px;
 }
 
 main #about aside p {
@@ -81,5 +120,5 @@ main #about aside .container {
 }
 
 main #about article h3 {
-  color: #91162a;
+  color: #ef233c;
 }
