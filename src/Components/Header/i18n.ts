@@ -10,12 +10,18 @@ i18n
       pt: {
         translations: {
           "Sobre": "Sobre",
+          "Experiência": "Experiência",
+          "Conhecimento": "Conhecimento",
+          "Projetos": "Projetos",
           "Contato": "Contato",
         }
       },
       en: {
         translations: {
           "Sobre": "About",
+          "Experiência": "Experience",
+          "Conhecimento": "Knowledge",
+          "Projetos": "Projects",
           "Contato": "Contact",
         }
       }
