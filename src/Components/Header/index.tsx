@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import brazilFlag from "../../Assets/brazil-flag.svg";
 import usaFlag from "../../Assets/usa-flag.svg";
 import "./i18n";
-import "./styles.css";
+import * as S from "./styles";
 
 export default function Header() {
     const { t, i18n } = useTranslation();
@@ -13,37 +13,38 @@ export default function Header() {
     };
 
     return (
-        <header>
-            <h1 className="logo">
+        <S.Header>
+            <S.Logo>
                 <PiMoonStarsBold />
                 danifarias.
-            </h1>
+            </S.Logo>
    
-        
-            <nav>
-                <ul className="menu">
+            <S.Navbar>
+                <S.Menu>
                     <li>
                         <a href="#a">{t("Sobre")}</a>
                     </li>
                     <li>
                         <a href="#b">{t("Contato")}</a>
                     </li>
-                </ul>
+                </S.Menu>
 
 
-                <div className="dropdown">
+                <S.Dropdown>
                     <PiTranslateBold size={30}/>
                     <div className="dropdown-content">
-                        <button onClick={() => changeLanguage("pt")}>
-                            <img src={brazilFlag} alt="" />
-                        </button>
-                        <button onClick={() => changeLanguage("en")}>
-                            <img src={usaFlag} alt="" />
-                        </button>
+                        <div className="dropdown-buttons-container">
+                            <button onClick={() => changeLanguage("pt")}>
+                                <img src={brazilFlag} alt="" />
+                            </button>
+                            <button onClick={() => changeLanguage("en")}>
+                                <img src={usaFlag} alt="" />
+                            </button>
+                        </div>
                     </div>
-                </div>
+                </S.Dropdown>
                 
-            </nav>
-        </header>
+            </S.Navbar>
+        </S.Header>
     );
 };
