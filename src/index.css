@@ -5,7 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--background);
+  background: url('./Assets/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 code {
@@ -20,5 +22,5 @@ code {
  --white: #ECF0FD;
  --dark-blue: #1B1F3B;
  --red: #cf4a61;
- --background: #0F0F0F;
+ --background: #0f0f0fad;
 }
