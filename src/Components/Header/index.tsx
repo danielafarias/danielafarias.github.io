@@ -13,6 +13,7 @@ export default function Header() {
     const { t, i18n } = useTranslation();
 
     const [actualLanguage, setActualLanguage] = useState<"pt" | "en">("pt");
+    const [hash, setHash] = useState("");
 
     useEffect(() => {
         const language = i18n.language;
@@ -37,21 +38,21 @@ export default function Header() {
    
             <S.Navbar>
                 <S.Menu>
-                    <li>
-                        <S.Link href="#about">{t("Sobre")}</S.Link>
-                    </li>
-                    <li>
-                        <S.Link href="#experience">{t("Experiência")}</S.Link>
-                    </li>
-                    <li>
-                        <S.Link href="#knowledge">{t("Conhecimento")}</S.Link>
-                    </li>
-                    <li>
-                        <S.Link href="#projects">{t("Projetos")}</S.Link>
-                    </li>
-                    <li>
-                        <S.Link href="#contact">{t("Contato")}</S.Link>
-                    </li>
+                    <S.MenuOption $active={hash === "#about"}>
+                        <S.Link href="#about" onClick={() => setHash("#about")}>{t("Sobre")}</S.Link>
+                    </S.MenuOption>
+                    <S.MenuOption $active={hash === "#experience"}>
+                        <S.Link href="#experience" onClick={() => setHash("#experience")}>{t("Experiência")}</S.Link>
+                    </S.MenuOption>
+                    <S.MenuOption $active={hash === "#knowledge"}>
+                        <S.Link href="#knowledge" onClick={() => setHash("#knowledge")}>{t("Conhecimento")}</S.Link>
+                    </S.MenuOption>
+                    <S.MenuOption $active={hash === "#projects"}>
+                        <S.Link href="#projects" onClick={() => setHash("#projects")}>{t("Projetos")}</S.Link>
+                    </S.MenuOption>
+                    <S.MenuOption $active={hash === "#contact"}>
+                        <S.Link href="#contact" onClick={() => setHash("#contact")}>{t("Contato")}</S.Link>
+                    </S.MenuOption>
                 </S.Menu>
 
                 <S.Dropdown $actualLanguage={actualLanguage}>
