@@ -3,7 +3,7 @@ import { styled } from "styled-components";
 export const Header = styled.header`
   display: flex;
   justify-content: space-between;
-  padding: 0 3rem 0 3rem;
+  padding: 0 1rem 0 1rem;
   background-color: var(--background);
 `;
 
@@ -62,7 +62,7 @@ export const Menu = styled.ul`
 `;
 
 export const MenuOption = styled.li<{ $active: boolean }>`
-  padding-right: 3rem;
+  padding-right: 1rem;
 
   a {
     color: ${(props) => (props.$active ? "var(--background)" : "var(--blue)")};
@@ -106,6 +106,14 @@ export const MenuOption = styled.li<{ $active: boolean }>`
       -moz-animation: fill 1s forwards;
       opacity: 1;
     }
+  }
+
+  @media (max-width: 962px) {
+    padding-right: 0.5rem;
+  }
+
+  @media (max-width: 922px) {
+    padding-right: 0.1rem;
   }
 `;
 
