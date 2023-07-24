@@ -4,6 +4,7 @@ export const Header = styled.header`
   display: flex;
   justify-content: space-between;
   padding: 0 3rem 0 3rem;
+  background-color: var(--background);
 `;
 
 export const Logo = styled.h1`
